@@ -92,5 +92,18 @@ I utilized methods such as context.select for only listening to necessary parame
 - **PDF Document Support**: Integrated PDF viewing capabilities assuming users need to view loan documents and payment receipts
 - **Multi-platform Support**: Built with cross-platform deployment in mind (iOS and Android)
 
+
+## Trade-offs
+BLoC Pattern Overhead: While BLoC provides excellent separation of concerns, it comes with trade-offs:
+
+- **Complexity****: Significant boilerplate code for simple state change                
+- **Learning Curve**: Steeper learning curve for new developer              
+- **Over-engineering**: May be excessive for smaller application                
+- **Development Speed**: Slower initial development compared to simpler state managemen             
+
+**Package Separation Strategy**: Extracting services into separate packages has trade-offs:
+Benefits: Reusability, modularity, clear boundaries
+Drawbacks: Increased complexity, dependency management overhead, potential over-abstraction
+
 ## Dependencies
 Core dependencies include flutter_bloc for state management, dio for HTTP requests, and PDF handling capabilities.
